@@ -2,7 +2,7 @@ import QuantityCounter from "./QuantityCounter";
 
 const CartCard = ({ item, remove }) => {
   return (
-    <div>
+    <div className="CartCard">
       <div>
         <img src={item.image} alt={item.productName} />
         <p>{item.productName}</p>
@@ -14,7 +14,9 @@ const CartCard = ({ item, remove }) => {
           Total: $
           {(parseFloat(item.price.replace("$", "")) * item.quantity).toFixed(2)}
         </p>
-        <button onClick={() => remove(item.id)}>Remove</button>
+        <button className="RemoveButton" onClick={() => remove(item.id)}>
+          Remove
+        </button>
       </div>
     </div>
   );

@@ -68,7 +68,7 @@
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
-  background-color: rgb(43, 48, 54);
+  background-color: white;
 }
 
 .CartCardInfo {
@@ -111,43 +111,49 @@
   cursor: pointer;
   margin: 0 5px;
 }
-.QuantityBtn:hover {
-  background-color: rgb(76, 43, 226);
-}
 
 img {
   height: 50px;
   border-radius: 5px;
 }
 
-.counter-container {
-  /* border: 1px solid white; */
-  display: flex;
-  width: 70%;
-  height: 20px;
-  justify-content: space-around;
-  align-items: center;
-  margin: 5px auto;
+.EmptyCartButton {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
-.counter-button {
-  width: 15px;
-  height: 15px;
-  border: 1px solid white;
-  border-radius: 50%;
+.BuyButton {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.CartListBtns {
-  display: flex;
-  justify-content: space-around;
+.EmptyCartButton:hover {
+  background-color: darkred;
+}
+
+.BuyButton:hover {
+  background-color: darkblue;
 }
 
 .RemoveButton {
-  background-color: rgb(190, 0, 0);
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
 }
 
-#BuyButton {
-  background-color: green;
-  width: 50%;
+.RemoveButton:hover {
+  background-color: darkred;
 }

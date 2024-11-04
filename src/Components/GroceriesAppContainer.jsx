@@ -33,7 +33,7 @@ const GroceriesAppContainer = () => {
   return (
     <div>
       <NavBar cart={cart} />
-      <div className="GroceriesContainer">
+      <div className="GroceriesApp-Container">
         <ProductsContainer products={products} addToCart={addToCart} />
         <CartContainer cart={cart} remove={remove} emptycart={emptycart} />
       </div>

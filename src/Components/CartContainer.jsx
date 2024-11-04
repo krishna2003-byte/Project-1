@@ -19,8 +19,12 @@ const CartContainer = ({ cart, remove, emptycart }) => {
             <CartCard key={item.id} item={item} remove={remove} />
           ))}
           <div>
-            <button onClick={emptycart}>Empty Cart</button>
-            <button>Buy Total: ${totalP.toFixed(2)}</button>
+            <button className="EmptyCartButton" onClick={emptycart}>
+              Empty Cart
+            </button>
+            <button className="BuyButton">
+              Buy Total: ${totalP.toFixed(2)}
+            </button>
           </div>
         </>
       )}
